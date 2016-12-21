@@ -8,7 +8,7 @@ before_script:
    - unzip imebra_4_0_7_1.zip
    - mkdir artifacts
    - cd artifacts
-   - cmake ../library
+   - cmake ../library/
    - cmake --build .
    - cd ../examples
 
