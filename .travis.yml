@@ -4,6 +4,13 @@ compiler:
   - gcc
 
 before_script:
+   - wget https://bitbucket.org/binarno/imebra/downloads/imebra_4_0_7_1.zip
+   - unzip imebra_4_0_7_1.zip
+   - mkdir artifacts
+   - cd artifacts
+   - cmake ../library
+   - cmake --build .
+   - cd ../examples
 
 script:
-
+   - cmake
